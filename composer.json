@@ -1,0 +1,18 @@
+{
+    "name": "justice/matrix_rotator",
+    "description": "A utility to rotate a 2D array (counter)clockwise",
+    "authors": [
+        {
+            "name": "Mohammad Khaledi",
+            "email": "mk_justice@yahoo.com"
+        }
+    ],
+    "require-dev": {
+	    "raveren/kint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+		    "Matrix\\": "src/"
+	    }
+    }
+}

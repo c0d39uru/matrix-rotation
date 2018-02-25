@@ -1,0 +1,5 @@
+vendor/
+.idea/**
+tests/_support/
+test/_output/**
+resources/
