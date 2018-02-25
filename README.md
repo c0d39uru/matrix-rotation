@@ -7,6 +7,8 @@ Basically, You are given a 2D matrix, of dimension MxN and a positive integer R.
 
 ## Tests
 A thorough test data set, guarantees the correctness of the solution and also simplifies the future refactorings.
+To run the tests, you need PHPUnit7 to be installed first. Then run the following command:
+`phpunit`
 
 ## Notes
 This is PHP7-compliant
