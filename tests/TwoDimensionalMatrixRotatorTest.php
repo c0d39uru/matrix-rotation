@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
-use Matrix\Rotator;
+use Matrix\TwoDimensionalMatrixRotator;
 use Matrix\Rotation;
 
 require 'MatrixIterator.php';
 
-class MatrixRotatorTest extends TestCase
+class TwoDimensionalMatrixRotatorTest extends TestCase
 {
     private const TEST_DATA_MIN_INDEX = 0;
     private const TEST_DATA_MAX_INDEX = 12;
@@ -20,7 +20,7 @@ class MatrixRotatorTest extends TestCase
      */
     public function test_matrix_rotator_can_read_data_from_from_file_and_rotate_matrices_counterclockwise(Rotation $rotation, array $input, array $expected): void
     {
-        $this->assertEquals($expected, (new Rotator($input, $rotation))->rotate());
+        $this->assertEquals($expected, (new TwoDimensionalMatrixRotator($input, $rotation))->rotate());
     }
 
     /**
@@ -31,7 +31,7 @@ class MatrixRotatorTest extends TestCase
      */
     public function test_matrix_rotator_can_read_data_from_from_file_and_rotate_matrices_clockwise(Rotation $rotation, array $input, array $expected): void
     {
-        $this->assertEquals($expected, (new Rotator($input, $rotation))->rotate());
+        $this->assertEquals($expected, (new TwoDimensionalMatrixRotator($input, $rotation))->rotate());
     }
 
     public function test_with_invalid_rotation_throws_exception(): void

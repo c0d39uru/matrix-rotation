@@ -2,7 +2,7 @@
 
 namespace Matrix;
 
-class Rotator
+class TwoDimensionalMatrixRotator implements Rotatable
 {
     private $matrix;
     private $numRows;
